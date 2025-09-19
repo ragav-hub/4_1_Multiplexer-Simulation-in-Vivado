@@ -96,7 +96,7 @@ module MUX4_dataflow(I,s,Y);
     assign w[2]=I[1]&(~s[1])&s[0];
     assign w[3]=I[2]&s[1]&(~s[0]);
     assign w[4]=I[3]&s[1]&s[0];
-    assign y=w[1]|w[2]|w[3]|w[4];
+    assign Y=w[1]|w[2]|w[3]|w[4];
 endmodule
 
 ```
@@ -131,7 +131,8 @@ endmodule
 ```
 ## Simulated Output Dataflow Modelling
 
-<img width="1917" height="1198" alt="Screenshot 2025-09-17 200305" src="https://github.com/user-attachments/assets/0fead296-a39b-48c8-a2e3-1ff698571a48" />
+<img width="1919" height="1199" alt="Screenshot 2025-09-19 113644" src="https://github.com/user-attachments/assets/b5df33f1-e922-42c5-a5db-126080eb91e1" />
+
 
 ---
 ### 4:1 MUX Behavioral Implementation
